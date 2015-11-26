@@ -60,9 +60,9 @@ fi
 cd $BUILD_DIR
 echo "-----> Init buildout"
 # curl -OL "${BOOTSTRAP_PY_URL}"
-python3 bootstrap.py -c $BUILDOUT_CFG
+python bootstrap.py -c $BUILDOUT_CFG
 echo "-----> Run bin/buildout -c ${BUILDOUT_CFG} ${BUILDOUT_VERBOSITY}"
-python3 bin/buildout -c $BUILDOUT_CFG $BUILDOUT_VERBOSITY
+bin/buildout -c $BUILDOUT_CFG $BUILDOUT_VERBOSITY
 
 echo "-----> Copy results to cache"
 cp -r $BUILD_DIR/bin $CACHE_DIR
