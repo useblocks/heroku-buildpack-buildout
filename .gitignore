@@ -1,3 +1,5 @@
+.idea
+.idea/
 .installed.cfg
 bin/activate
 bin/activate.csh
